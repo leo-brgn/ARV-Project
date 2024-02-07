@@ -20,6 +20,7 @@ public class SimpleSampleCharacterControl : MonoBehaviour
     [SerializeField] private DynamicJoystick m_joystick;
     [SerializeField] private float m_turnSpeed = 200;
     [SerializeField] private float m_jumpForce = 4;
+    [SerializeField] private ParticleSystem m_particleSystem;
 
     [SerializeField] private Animator m_animator = null;
     [SerializeField] private Rigidbody m_rigidBody = null;
@@ -49,6 +50,10 @@ public class SimpleSampleCharacterControl : MonoBehaviour
     {
         if (!m_animator) { gameObject.GetComponent<Animator>(); }
         if (!m_rigidBody) { gameObject.GetComponent<Animator>(); }
+        if (m_particleSystem){
+            // Make sure the particle system is not playing on start
+            m_particleSystem.Stop();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -255,6 +260,14 @@ public class SimpleSampleCharacterControl : MonoBehaviour
         if (!m_isGrounded && m_wasGrounded)
         {
             m_animator.SetTrigger("Jump");
+        }
+    }
+
+    public void StartParticles()
+    {
+        if (m_particleSystem)
+        {
+            m_particleSystem.Play();
         }
     }
 }

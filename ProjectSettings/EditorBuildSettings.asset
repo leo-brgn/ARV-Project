@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/About.unity
     guid: 1c58ca432191f40e5bbd0a8d8eca649d
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Levels/Desert.unity
+    guid: 92a5a34d9d6564fcfb2c9ce8006ad022
+  - enabled: 1
+    path: Assets/Scenes/Levels/Snow.unity
+    guid: cbffc388b15fa4c18951c6693755c5b7
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: e7196ff6a93324699a81d57a53406f24
