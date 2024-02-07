@@ -24,6 +24,7 @@ public class SimpleSampleCharacterControl : MonoBehaviour
 
     [SerializeField] private Animator m_animator = null;
     [SerializeField] private Rigidbody m_rigidBody = null;
+    [SerializeField] private GameObject m_timeScore;
 
     [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;
 
@@ -265,6 +266,7 @@ public class SimpleSampleCharacterControl : MonoBehaviour
 
     public void StartParticles()
     {
+        m_timeScore.GetComponent<TimeScore>().LevelFinished();
         if (m_particleSystem)
         {
             m_particleSystem.Play();
