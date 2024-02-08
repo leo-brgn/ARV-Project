@@ -1890,15 +1890,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5512173094148473624, guid: baf00a0dcfc9146fba84cd03992f6265, type: 3}
       insertIndex: -1
       addedObject: {fileID: 216376244}
-<<<<<<< HEAD
     - targetCorrespondingSourceObject: {fileID: 5512173094148473624, guid: baf00a0dcfc9146fba84cd03992f6265, type: 3}
       insertIndex: -1
       addedObject: {fileID: 216376245}
     - targetCorrespondingSourceObject: {fileID: 5512173094148473624, guid: baf00a0dcfc9146fba84cd03992f6265, type: 3}
       insertIndex: -1
       addedObject: {fileID: 216376246}
-=======
->>>>>>> fd537f4318a281c2218c926ecdb9b0bf10964446
   m_SourcePrefab: {fileID: 100100000, guid: baf00a0dcfc9146fba84cd03992f6265, type: 3}
 --- !u!4 &216376239 stripped
 Transform:
@@ -1938,11 +1935,7 @@ MonoBehaviour:
   mTargetName: Cube
   mDatasetName: Vuforia/RVA-Project.xml
   mCastedBehaviour: {fileID: 216376241}
-<<<<<<< HEAD
   mBaseMesh: {fileID: 1301768910}
-=======
-  mBaseMesh: {fileID: 352448123}
->>>>>>> fd537f4318a281c2218c926ecdb9b0bf10964446
 --- !u!114 &216376244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,7 +1953,6 @@ MonoBehaviour:
   mTargetName: Cube
   mDatasetName: Vuforia/RVA-Project.xml
   mCastedBehaviour: {fileID: 216376241}
-<<<<<<< HEAD
   mBaseMesh: {fileID: 1055762773}
 --- !u!114 &216376245
 MonoBehaviour:
@@ -1998,9 +1990,6 @@ MonoBehaviour:
   mDatasetName: Vuforia/RVA-Project.xml
   mCastedBehaviour: {fileID: 216376241}
   mBaseMesh: {fileID: 517855420}
-=======
-  mBaseMesh: {fileID: 1401979032}
->>>>>>> fd537f4318a281c2218c926ecdb9b0bf10964446
 --- !u!1 &238122428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2147,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2c1d584bdf0d86644962a92568011503, type: 3}
   m_PrefabInstance: {fileID: 242819485}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &256372281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,8 +2227,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256372281}
   m_CullTransparentMesh: 1
-=======
->>>>>>> fd537f4318a281c2218c926ecdb9b0bf10964446
 --- !u!4 &262702121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5658ccea96fc4064da3911322b31fba6, type: 3}
