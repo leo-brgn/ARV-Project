@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Desert.unity
     guid: 92a5a34d9d6564fcfb2c9ce8006ad022
   - enabled: 1
-    path: Assets/Scenes/Levels/DesertToSnow.unity
-    guid: f647bffdd869448f1b4a5117c00af8f9
-  - enabled: 1
     path: Assets/Scenes/Levels/Snow.unity
     guid: cbffc388b15fa4c18951c6693755c5b7
   - enabled: 1

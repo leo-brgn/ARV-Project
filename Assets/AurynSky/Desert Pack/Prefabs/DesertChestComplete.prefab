@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 4234813111254052}
   - component: {fileID: 95823910701210086}
   - component: {fileID: 114576702303592426}
+  - component: {fileID: 2051908880367638179}
   m_Layer: 0
   m_Name: DesertChestComplete
   m_TagString: Untagged
@@ -235,3 +236,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chestAnim: {fileID: 95823910701210086}
+  sceneToLoad: GameOver
+  OpenSound: {fileID: 0}
+--- !u!65 &2051908880367638179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577768073483710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1981649, y: 0.8981862, z: 0.89944935}
+  m_Center: {x: 0.3640291, y: -0.01882577, z: 0.23877764}
