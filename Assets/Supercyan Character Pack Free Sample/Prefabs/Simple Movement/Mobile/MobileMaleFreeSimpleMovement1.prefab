@@ -1341,6 +1341,7 @@ GameObject:
   - component: {fileID: 136943970358897604}
   - component: {fileID: 95541723052833158}
   - component: {fileID: 1221030649215221295}
+  - component: {fileID: 4784145495997336739}
   m_Layer: 0
   m_Name: MobileMaleFreeSimpleMovement1
   m_TagString: Player
@@ -1456,7 +1457,23 @@ MonoBehaviour:
   m_particleSystem: {fileID: 6988759059105942704}
   m_animator: {fileID: 95541723052833158}
   m_rigidBody: {fileID: 54704068080705314}
+  m_timeScore: {fileID: 0}
   m_controlMode: 2
+--- !u!114 &4784145495997336739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997953001238138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a2b9bc0ebf447abb1afec3f00d1676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnowSound: {fileID: 8300000, guid: d38f1ef2b2eab4014bb5cae043d906e8, type: 3}
+  NormalSound: {fileID: 8300000, guid: e357c8dc8f9a64be09822da7edab2f43, type: 3}
+  m_groundType: 1
 --- !u!1001 &8558174166715330749
 PrefabInstance:
   m_ObjectHideFlags: 0

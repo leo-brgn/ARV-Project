@@ -10,6 +10,9 @@ public class ChestDemo : MonoBehaviour {
 
     public string sceneToLoad = "GameOver"; //The name of the scene to load;
 
+    // Audio clip of opening
+    public AudioClip OpenSound;
+
 	// Use this for initialization
 	void Awake ()
     {
@@ -21,15 +24,13 @@ public class ChestDemo : MonoBehaviour {
 
     void Update()
     {
-        // Check if player is in front of the chest with Raycast;
+        // Send a ray to test if player is in front of the chest;
+        Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 2))
+        if (Physics.Raycast(ray, out hit, 4f))
         {
             if (hit.collider.tag == "Player")
             {
-                //play open animation;
-                chestAnim.SetTrigger("open");
-                //wait 2 seconds;
                 StartCoroutine(GoToScene());
             }
         }
@@ -41,10 +42,12 @@ public class ChestDemo : MonoBehaviour {
         // Get player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<SimpleSampleCharacterControl>().StartParticles();
+        // Start sound clip
+        AudioSource.PlayClipAtPoint(OpenSound, transform.position);
         //wait 2 seconds;
         yield return new WaitForSeconds(2);
         //load the scene;
-        Application.LoadLevel(sceneToLoad);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }
 
     IEnumerator OpenCloseChest()
